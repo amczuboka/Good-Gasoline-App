@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A961E162A1EAEB800401C45 /* GoodGasolineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E152A1EAEB800401C45 /* GoodGasolineApp.swift */; };
+		7A961E182A1EAEB800401C45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E172A1EAEB800401C45 /* ContentView.swift */; };
+		7A961E1A2A1EAEBA00401C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A961E192A1EAEBA00401C45 /* Assets.xcassets */; };
+		7A961E1D2A1EAEBA00401C45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A961E1C2A1EAEBA00401C45 /* Preview Assets.xcassets */; };
+		7A961E272A1EAEBB00401C45 /* GoodGasolineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E262A1EAEBB00401C45 /* GoodGasolineTests.swift */; };
+		7A961E312A1EAEBB00401C45 /* GoodGasolineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E302A1EAEBB00401C45 /* GoodGasolineUITests.swift */; };
+		7A961E332A1EAEBB00401C45 /* GoodGasolineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E322A1EAEBB00401C45 /* GoodGasolineUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A961E232A1EAEBB00401C45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A961E0A2A1EAEB800401C45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A961E112A1EAEB800401C45;
+			remoteInfo = GoodGasoline;
+		};
+		7A961E2D2A1EAEBB00401C45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A961E0A2A1EAEB800401C45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A961E112A1EAEB800401C45;
+			remoteInfo = GoodGasoline;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A961E122A1EAEB800401C45 /* GoodGasoline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodGasoline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A961E152A1EAEB800401C45 /* GoodGasolineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodGasolineApp.swift; sourceTree = "<group>"; };
+		7A961E172A1EAEB800401C45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7A961E192A1EAEBA00401C45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A961E1C2A1EAEBA00401C45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A961E222A1EAEBB00401C45 /* GoodGasolineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodGasolineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A961E262A1EAEBB00401C45 /* GoodGasolineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodGasolineTests.swift; sourceTree = "<group>"; };
+		7A961E2C2A1EAEBB00401C45 /* GoodGasolineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodGasolineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A961E302A1EAEBB00401C45 /* GoodGasolineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodGasolineUITests.swift; sourceTree = "<group>"; };
+		7A961E322A1EAEBB00401C45 /* GoodGasolineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodGasolineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A961E0F2A1EAEB800401C45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A961E1F2A1EAEBB00401C45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A961E292A1EAEBB00401C45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A961E092A1EAEB800401C45 = {
+			isa = PBXGroup;
+			children = (
+				7A961E142A1EAEB800401C45 /* GoodGasoline */,
+				7A961E252A1EAEBB00401C45 /* GoodGasolineTests */,
+				7A961E2F2A1EAEBB00401C45 /* GoodGasolineUITests */,
+				7A961E132A1EAEB800401C45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A961E132A1EAEB800401C45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A961E122A1EAEB800401C45 /* GoodGasoline.app */,
+				7A961E222A1EAEBB00401C45 /* GoodGasolineTests.xctest */,
+				7A961E2C2A1EAEBB00401C45 /* GoodGasolineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A961E142A1EAEB800401C45 /* GoodGasoline */ = {
+			isa = PBXGroup;
+			children = (
+				7A961E152A1EAEB800401C45 /* GoodGasolineApp.swift */,
+				7A961E172A1EAEB800401C45 /* ContentView.swift */,
+				7A961E192A1EAEBA00401C45 /* Assets.xcassets */,
+				7A961E1B2A1EAEBA00401C45 /* Preview Content */,
+			);
+			path = GoodGasoline;
+			sourceTree = "<group>";
+		};
+		7A961E1B2A1EAEBA00401C45 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7A961E1C2A1EAEBA00401C45 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A961E252A1EAEBB00401C45 /* GoodGasolineTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A961E262A1EAEBB00401C45 /* GoodGasolineTests.swift */,
+			);
+			path = GoodGasolineTests;
+			sourceTree = "<group>";
+		};
+		7A961E2F2A1EAEBB00401C45 /* GoodGasolineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A961E302A1EAEBB00401C45 /* GoodGasolineUITests.swift */,
+				7A961E322A1EAEBB00401C45 /* GoodGasolineUITestsLaunchTests.swift */,
+			);
+			path = GoodGasolineUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A961E112A1EAEB800401C45 /* GoodGasoline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A961E362A1EAEBB00401C45 /* Build configuration list for PBXNativeTarget "GoodGasoline" */;
+			buildPhases = (
+				7A961E0E2A1EAEB800401C45 /* Sources */,
+				7A961E0F2A1EAEB800401C45 /* Frameworks */,
+				7A961E102A1EAEB800401C45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodGasoline;
+			productName = GoodGasoline;
+			productReference = 7A961E122A1EAEB800401C45 /* GoodGasoline.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A961E212A1EAEBB00401C45 /* GoodGasolineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A961E392A1EAEBB00401C45 /* Build configuration list for PBXNativeTarget "GoodGasolineTests" */;
+			buildPhases = (
+				7A961E1E2A1EAEBB00401C45 /* Sources */,
+				7A961E1F2A1EAEBB00401C45 /* Frameworks */,
+				7A961E202A1EAEBB00401C45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A961E242A1EAEBB00401C45 /* PBXTargetDependency */,
+			);
+			name = GoodGasolineTests;
+			productName = GoodGasolineTests;
+			productReference = 7A961E222A1EAEBB00401C45 /* GoodGasolineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7A961E2B2A1EAEBB00401C45 /* GoodGasolineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A961E3C2A1EAEBB00401C45 /* Build configuration list for PBXNativeTarget "GoodGasolineUITests" */;
+			buildPhases = (
+				7A961E282A1EAEBB00401C45 /* Sources */,
+				7A961E292A1EAEBB00401C45 /* Frameworks */,
+				7A961E2A2A1EAEBB00401C45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A961E2E2A1EAEBB00401C45 /* PBXTargetDependency */,
+			);
+			name = GoodGasolineUITests;
+			productName = GoodGasolineUITests;
+			productReference = 7A961E2C2A1EAEBB00401C45 /* GoodGasolineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A961E0A2A1EAEB800401C45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					7A961E112A1EAEB800401C45 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					7A961E212A1EAEBB00401C45 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 7A961E112A1EAEB800401C45;
+					};
+					7A961E2B2A1EAEBB00401C45 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 7A961E112A1EAEB800401C45;
+					};
+				};
+			};
+			buildConfigurationList = 7A961E0D2A1EAEB800401C45 /* Build configuration list for PBXProject "GoodGasoline" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A961E092A1EAEB800401C45;
+			productRefGroup = 7A961E132A1EAEB800401C45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A961E112A1EAEB800401C45 /* GoodGasoline */,
+				7A961E212A1EAEBB00401C45 /* GoodGasolineTests */,
+				7A961E2B2A1EAEBB00401C45 /* GoodGasolineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A961E102A1EAEB800401C45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A961E1D2A1EAEBA00401C45 /* Preview Assets.xcassets in Resources */,
+				7A961E1A2A1EAEBA00401C45 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A961E202A1EAEBB00401C45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A961E2A2A1EAEBB00401C45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A961E0E2A1EAEB800401C45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A961E182A1EAEB800401C45 /* ContentView.swift in Sources */,
+				7A961E162A1EAEB800401C45 /* GoodGasolineApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A961E1E2A1EAEBB00401C45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A961E272A1EAEBB00401C45 /* GoodGasolineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A961E282A1EAEBB00401C45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A961E312A1EAEBB00401C45 /* GoodGasolineUITests.swift in Sources */,
+				7A961E332A1EAEBB00401C45 /* GoodGasolineUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A961E242A1EAEBB00401C45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A961E112A1EAEB800401C45 /* GoodGasoline */;
+			targetProxy = 7A961E232A1EAEBB00401C45 /* PBXContainerItemProxy */;
+		};
+		7A961E2E2A1EAEBB00401C45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A961E112A1EAEB800401C45 /* GoodGasoline */;
+			targetProxy = 7A961E2D2A1EAEBB00401C45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7A961E342A1EAEBB00401C45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A961E352A1EAEBB00401C45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A961E372A1EAEBB00401C45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoodGasoline/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = googleapi.GoodGasoline;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A961E382A1EAEBB00401C45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoodGasoline/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = googleapi.GoodGasoline;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7A961E3A2A1EAEBB00401C45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = googleapi.GoodGasolineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodGasoline.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoodGasoline";
+			};
+			name = Debug;
+		};
+		7A961E3B2A1EAEBB00401C45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = googleapi.GoodGasolineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodGasoline.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoodGasoline";
+			};
+			name = Release;
+		};
+		7A961E3D2A1EAEBB00401C45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = googleapi.GoodGasolineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodGasoline;
+			};
+			name = Debug;
+		};
+		7A961E3E2A1EAEBB00401C45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = googleapi.GoodGasolineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodGasoline;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A961E0D2A1EAEB800401C45 /* Build configuration list for PBXProject "GoodGasoline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A961E342A1EAEBB00401C45 /* Debug */,
+				7A961E352A1EAEBB00401C45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A961E362A1EAEBB00401C45 /* Build configuration list for PBXNativeTarget "GoodGasoline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A961E372A1EAEBB00401C45 /* Debug */,
+				7A961E382A1EAEBB00401C45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A961E392A1EAEBB00401C45 /* Build configuration list for PBXNativeTarget "GoodGasolineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A961E3A2A1EAEBB00401C45 /* Debug */,
+				7A961E3B2A1EAEBB00401C45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A961E3C2A1EAEBB00401C45 /* Build configuration list for PBXNativeTarget "GoodGasolineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A961E3D2A1EAEBB00401C45 /* Debug */,
+				7A961E3E2A1EAEBB00401C45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A961E0A2A1EAEB800401C45 /* Project object */;
+}
