@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47C8513133ED8113321BF512 /* Pods_GoodGasolineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5CBB03205EAB57AF6964D4 /* Pods_GoodGasolineTests.framework */; };
 		7A961E162A1EAEB800401C45 /* GoodGasolineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E152A1EAEB800401C45 /* GoodGasolineApp.swift */; };
 		7A961E182A1EAEB800401C45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E172A1EAEB800401C45 /* ContentView.swift */; };
 		7A961E1A2A1EAEBA00401C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A961E192A1EAEBA00401C45 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		7A961E272A1EAEBB00401C45 /* GoodGasolineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E262A1EAEBB00401C45 /* GoodGasolineTests.swift */; };
 		7A961E312A1EAEBB00401C45 /* GoodGasolineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E302A1EAEBB00401C45 /* GoodGasolineUITests.swift */; };
 		7A961E332A1EAEBB00401C45 /* GoodGasolineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E322A1EAEBB00401C45 /* GoodGasolineUITestsLaunchTests.swift */; };
+		F098CFC3EC7B526B08793FC6 /* Pods_GoodGasoline_GoodGasolineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0723E8953F36692DF700F7 /* Pods_GoodGasoline_GoodGasolineUITests.framework */; };
+		F3F9022C1E784C5A38F2B951 /* Pods_GoodGasoline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629D47907B39D6C231AB553A /* Pods_GoodGasoline.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19E6C0EC9E8E2808D14B06C8 /* Pods-GoodGasolineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodGasolineTests.debug.xcconfig"; path = "Target Support Files/Pods-GoodGasolineTests/Pods-GoodGasolineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A236F468528FC2D6FB68584 /* Pods-GoodGasolineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodGasolineTests.release.xcconfig"; path = "Target Support Files/Pods-GoodGasolineTests/Pods-GoodGasolineTests.release.xcconfig"; sourceTree = "<group>"; };
+		3506F32E60E382EDDC3AA0D8 /* Pods-GoodGasoline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodGasoline.release.xcconfig"; path = "Target Support Files/Pods-GoodGasoline/Pods-GoodGasoline.release.xcconfig"; sourceTree = "<group>"; };
+		629D47907B39D6C231AB553A /* Pods_GoodGasoline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodGasoline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A961E122A1EAEB800401C45 /* GoodGasoline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodGasoline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A961E152A1EAEB800401C45 /* GoodGasolineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodGasolineApp.swift; sourceTree = "<group>"; };
 		7A961E172A1EAEB800401C45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +51,11 @@
 		7A961E2C2A1EAEBB00401C45 /* GoodGasolineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodGasolineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A961E302A1EAEBB00401C45 /* GoodGasolineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodGasolineUITests.swift; sourceTree = "<group>"; };
 		7A961E322A1EAEBB00401C45 /* GoodGasolineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodGasolineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF0B8D395C760A968C98FA38 /* Pods-GoodGasoline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodGasoline.debug.xcconfig"; path = "Target Support Files/Pods-GoodGasoline/Pods-GoodGasoline.debug.xcconfig"; sourceTree = "<group>"; };
+		CF5CBB03205EAB57AF6964D4 /* Pods_GoodGasolineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodGasolineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0723E8953F36692DF700F7 /* Pods_GoodGasoline_GoodGasolineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodGasoline_GoodGasolineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01D96254298D576C1786CAE /* Pods-GoodGasoline-GoodGasolineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodGasoline-GoodGasolineUITests.release.xcconfig"; path = "Target Support Files/Pods-GoodGasoline-GoodGasolineUITests/Pods-GoodGasoline-GoodGasolineUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F6523301C92713A121B81641 /* Pods-GoodGasoline-GoodGasolineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodGasoline-GoodGasolineUITests.debug.xcconfig"; path = "Target Support Files/Pods-GoodGasoline-GoodGasolineUITests/Pods-GoodGasoline-GoodGasolineUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F9022C1E784C5A38F2B951 /* Pods_GoodGasoline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47C8513133ED8113321BF512 /* Pods_GoodGasolineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F098CFC3EC7B526B08793FC6 /* Pods_GoodGasoline_GoodGasolineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,8 @@
 				7A961E252A1EAEBB00401C45 /* GoodGasolineTests */,
 				7A961E2F2A1EAEBB00401C45 /* GoodGasolineUITests */,
 				7A961E132A1EAEB800401C45 /* Products */,
+				FEED8334CC23C7C260900B61 /* Pods */,
+				968C58753E4C563FC853479F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,30 @@
 			path = GoodGasolineUITests;
 			sourceTree = "<group>";
 		};
+		968C58753E4C563FC853479F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				629D47907B39D6C231AB553A /* Pods_GoodGasoline.framework */,
+				DD0723E8953F36692DF700F7 /* Pods_GoodGasoline_GoodGasolineUITests.framework */,
+				CF5CBB03205EAB57AF6964D4 /* Pods_GoodGasolineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEED8334CC23C7C260900B61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF0B8D395C760A968C98FA38 /* Pods-GoodGasoline.debug.xcconfig */,
+				3506F32E60E382EDDC3AA0D8 /* Pods-GoodGasoline.release.xcconfig */,
+				F6523301C92713A121B81641 /* Pods-GoodGasoline-GoodGasolineUITests.debug.xcconfig */,
+				F01D96254298D576C1786CAE /* Pods-GoodGasoline-GoodGasolineUITests.release.xcconfig */,
+				19E6C0EC9E8E2808D14B06C8 /* Pods-GoodGasolineTests.debug.xcconfig */,
+				1A236F468528FC2D6FB68584 /* Pods-GoodGasolineTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A961E362A1EAEBB00401C45 /* Build configuration list for PBXNativeTarget "GoodGasoline" */;
 			buildPhases = (
+				FB44E3A8305EDAA343ACB3DE /* [CP] Check Pods Manifest.lock */,
 				7A961E0E2A1EAEB800401C45 /* Sources */,
 				7A961E0F2A1EAEB800401C45 /* Frameworks */,
 				7A961E102A1EAEB800401C45 /* Resources */,
+				41AEE88000608F84AF16CCD9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A961E392A1EAEBB00401C45 /* Build configuration list for PBXNativeTarget "GoodGasolineTests" */;
 			buildPhases = (
+				F90331A647BDA89D4D6ED335 /* [CP] Check Pods Manifest.lock */,
 				7A961E1E2A1EAEBB00401C45 /* Sources */,
 				7A961E1F2A1EAEBB00401C45 /* Frameworks */,
 				7A961E202A1EAEBB00401C45 /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A961E3C2A1EAEBB00401C45 /* Build configuration list for PBXNativeTarget "GoodGasolineUITests" */;
 			buildPhases = (
+				6FFA368AE764103E9927505D /* [CP] Check Pods Manifest.lock */,
 				7A961E282A1EAEBB00401C45 /* Sources */,
 				7A961E292A1EAEBB00401C45 /* Frameworks */,
 				7A961E2A2A1EAEBB00401C45 /* Resources */,
+				FC4339CAF99D80678E78D688 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +297,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41AEE88000608F84AF16CCD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodGasoline/Pods-GoodGasoline-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodGasoline/Pods-GoodGasoline-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodGasoline/Pods-GoodGasoline-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FFA368AE764103E9927505D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodGasoline-GoodGasolineUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F90331A647BDA89D4D6ED335 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodGasolineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB44E3A8305EDAA343ACB3DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodGasoline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC4339CAF99D80678E78D688 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodGasoline-GoodGasolineUITests/Pods-GoodGasoline-GoodGasolineUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodGasoline-GoodGasolineUITests/Pods-GoodGasoline-GoodGasolineUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodGasoline-GoodGasolineUITests/Pods-GoodGasoline-GoodGasolineUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A961E0E2A1EAEB800401C45 /* Sources */ = {
@@ -411,6 +560,7 @@
 		};
 		7A961E372A1EAEBB00401C45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0B8D395C760A968C98FA38 /* Pods-GoodGasoline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,6 +589,7 @@
 		};
 		7A961E382A1EAEBB00401C45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3506F32E60E382EDDC3AA0D8 /* Pods-GoodGasoline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -467,6 +618,7 @@
 		};
 		7A961E3A2A1EAEBB00401C45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19E6C0EC9E8E2808D14B06C8 /* Pods-GoodGasolineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +638,7 @@
 		};
 		7A961E3B2A1EAEBB00401C45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A236F468528FC2D6FB68584 /* Pods-GoodGasolineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +658,7 @@
 		};
 		7A961E3D2A1EAEBB00401C45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6523301C92713A121B81641 /* Pods-GoodGasoline-GoodGasolineUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +676,7 @@
 		};
 		7A961E3E2A1EAEBB00401C45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F01D96254298D576C1786CAE /* Pods-GoodGasoline-GoodGasolineUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

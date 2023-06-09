@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleMaps;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		22C3764CB7BBCAA3BA617444A76B0BBE /* Pods-GoodGasoline-GoodGasolineUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 290292832AAE7A3E0EF7C6DDF158615E /* Pods-GoodGasoline-GoodGasolineUITests-dummy.m */; };
+		35368BB72D2859A1C270ECBB7AB86930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		924F847B5CB218396641276981FEC9BB /* Pods-GoodGasoline-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75C38654914597FABC5EE603942118A2 /* Pods-GoodGasoline-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		961C3303E749F9A9F35D8941BA2A4391 /* Pods-GoodGasolineTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADB0D26C3FC30894625D01DE0BBD49D /* Pods-GoodGasolineTests-dummy.m */; };
+		BB5064C1249153A0AB2BD7F7FB1E24CF /* Pods-GoodGasoline-GoodGasolineUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D88423BCAB91582C968FB401BBC992E3 /* Pods-GoodGasoline-GoodGasolineUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C82CDD50FBDFC80135374BED14F9D16A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D789553C0678689442F8BE183444E3BD /* Pods-GoodGasolineTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A94B2E95A2B94F03ADA75671C26CC627 /* Pods-GoodGasolineTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDBB4C33951A78AF422620CAB8F5573E /* Pods-GoodGasoline-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6797089C34685766CD56387A382EE7 /* Pods-GoodGasoline-dummy.m */; };
+		DF860007237BCB1CD5096ED24B288C2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34DA8A47C0DDA6D2E8B0716CA91014B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11C708CC3A740C54734C7CE93F27DEE;
+			remoteInfo = "Pods-GoodGasoline";
+		};
+		4EC0922A1887F59580CF1EEBFFA794B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		A909689629F882E28436B810BBE00CF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01AF48CF5646ADAB5D7324A8169AFF03 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		033787DDCB402B28282FF0000E68D01D /* Pods-GoodGasoline.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoodGasoline.modulemap"; sourceTree = "<group>"; };
+		0A3C1DB68A4CD81A2F4006302715C475 /* Pods-GoodGasoline-GoodGasolineUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoodGasoline-GoodGasolineUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0DB92F2357D4300B786AE70096BDC7A7 /* Pods-GoodGasolineTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodGasolineTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1754923469D7B1538C9119357A555352 /* Pods-GoodGasoline-GoodGasolineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodGasoline-GoodGasolineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		17CFC4861A659D57874D55807C120E9C /* Pods-GoodGasoline */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GoodGasoline"; path = Pods_GoodGasoline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26484D89152F13C1E09B86067571FF46 /* Pods-GoodGasoline-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodGasoline-acknowledgements.plist"; sourceTree = "<group>"; };
+		290292832AAE7A3E0EF7C6DDF158615E /* Pods-GoodGasoline-GoodGasolineUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoodGasoline-GoodGasolineUITests-dummy.m"; sourceTree = "<group>"; };
+		2CB6EBF540DAE7176A2B4A1B3AFD0602 /* Pods-GoodGasoline-GoodGasolineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodGasoline-GoodGasolineUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2E8C229EC350B8BB0F6C9B815C782E71 /* Pods-GoodGasolineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodGasolineTests.release.xcconfig"; sourceTree = "<group>"; };
+		3856E9FC5B37FA138B1FAA400DE45C62 /* Pods-GoodGasoline-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoodGasoline-resources.sh"; sourceTree = "<group>"; };
+		4886DBB0FABDC3B7F41143FB21ECE9E6 /* Pods-GoodGasoline-GoodGasolineUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GoodGasoline-GoodGasolineUITests"; path = Pods_GoodGasoline_GoodGasolineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F3E5855D456705346A360F11C9400E /* Pods-GoodGasolineTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoodGasolineTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5FA04FB8DC3974797C5066B489210C3A /* Pods-GoodGasolineTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodGasolineTests-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7526B9DC68B17A24DF453DEA999934A7 /* Pods-GoodGasoline-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodGasoline-Info.plist"; sourceTree = "<group>"; };
+		75C38654914597FABC5EE603942118A2 /* Pods-GoodGasoline-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoodGasoline-umbrella.h"; sourceTree = "<group>"; };
+		7ADB0D26C3FC30894625D01DE0BBD49D /* Pods-GoodGasolineTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoodGasolineTests-dummy.m"; sourceTree = "<group>"; };
+		85CBFA80FA917FD6DF8768C6F271A6A8 /* Pods-GoodGasoline-GoodGasolineUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoodGasoline-GoodGasolineUITests-resources.sh"; sourceTree = "<group>"; };
+		8D0B1E8D672E03765CB7B951C0EEC486 /* Pods-GoodGasolineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodGasolineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A94B2E95A2B94F03ADA75671C26CC627 /* Pods-GoodGasolineTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoodGasolineTests-umbrella.h"; sourceTree = "<group>"; };
+		A9B8E5006446175875D9537DA3F3CEE3 /* Pods-GoodGasoline-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoodGasoline-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AABE3D21F0BE384435A5D7C08A8FD5BB /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
+		C3D0978B919EA2ECF2A2F8466075BB51 /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
+		C9FA9110FF2CC4613E7E379FF845FE96 /* Pods-GoodGasolineTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoodGasolineTests.modulemap"; sourceTree = "<group>"; };
+		CCAF84BDED2FB6E96E950E18E0742136 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		D88423BCAB91582C968FB401BBC992E3 /* Pods-GoodGasoline-GoodGasolineUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoodGasoline-GoodGasolineUITests-umbrella.h"; sourceTree = "<group>"; };
+		E015570C3245A8951D05388C30AF1965 /* Pods-GoodGasoline-GoodGasolineUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodGasoline-GoodGasolineUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E2309F84CDF17FF87E66D6CDB6B517AB /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		E2F4E7C722407F81715B67A5F9EC4FAD /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		E451AB942F783F98BB7F56F9572FC02C /* Pods-GoodGasoline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodGasoline.debug.xcconfig"; sourceTree = "<group>"; };
+		E4D60A8E9F4AED18CEE1456C177E0FAF /* Pods-GoodGasoline-GoodGasolineUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodGasoline-GoodGasolineUITests-Info.plist"; sourceTree = "<group>"; };
+		E6583D337877E4C12E00AF50891F8AE1 /* Pods-GoodGasoline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodGasoline.release.xcconfig"; sourceTree = "<group>"; };
+		E91688A302F3F7E3AC7811C9B44FB2C3 /* Pods-GoodGasolineTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GoodGasolineTests"; path = Pods_GoodGasolineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6797089C34685766CD56387A382EE7 /* Pods-GoodGasoline-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoodGasoline-dummy.m"; sourceTree = "<group>"; };
+		F75BBE65750DB623A633892BF0A1004A /* Pods-GoodGasoline-GoodGasolineUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoodGasoline-GoodGasolineUITests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		759C4C9F06B5C68BFA9071B0B27EB81A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF860007237BCB1CD5096ED24B288C2E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDEC0BE4D69D75BA5237B79BC20A161B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82CDD50FBDFC80135374BED14F9D16A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A4C3A621A0C1D4963C913E3635370B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35368BB72D2859A1C270ECBB7AB86930 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		186EA182A9758033E20807D84BAC46A7 /* Pods-GoodGasolineTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9FA9110FF2CC4613E7E379FF845FE96 /* Pods-GoodGasolineTests.modulemap */,
+				58F3E5855D456705346A360F11C9400E /* Pods-GoodGasolineTests-acknowledgements.markdown */,
+				0DB92F2357D4300B786AE70096BDC7A7 /* Pods-GoodGasolineTests-acknowledgements.plist */,
+				7ADB0D26C3FC30894625D01DE0BBD49D /* Pods-GoodGasolineTests-dummy.m */,
+				5FA04FB8DC3974797C5066B489210C3A /* Pods-GoodGasolineTests-Info.plist */,
+				A94B2E95A2B94F03ADA75671C26CC627 /* Pods-GoodGasolineTests-umbrella.h */,
+				8D0B1E8D672E03765CB7B951C0EEC486 /* Pods-GoodGasolineTests.debug.xcconfig */,
+				2E8C229EC350B8BB0F6C9B815C782E71 /* Pods-GoodGasolineTests.release.xcconfig */,
+			);
+			name = "Pods-GoodGasolineTests";
+			path = "Target Support Files/Pods-GoodGasolineTests";
+			sourceTree = "<group>";
+		};
+		1AEA1CF3E36FF8113F6FFD7526BE5F98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCAF84BDED2FB6E96E950E18E0742136 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23258B9441300E23C80256BEEFD1F964 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				5FCC553E82707BA26B1F6EDC00161B0D /* Base */,
+				387015716759109261086A8C0CA736F5 /* Maps */,
+				9601491F11C5653D98D1EB5DF2155DFE /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		387015716759109261086A8C0CA736F5 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				F9621E38CA93CD5E47C3F28B4F0AF3DD /* Frameworks */,
+				E48211C21EA696EBC32B31525F5FFA67 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5FCC553E82707BA26B1F6EDC00161B0D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1AEA1CF3E36FF8113F6FFD7526BE5F98 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		668598C490F7BE5427F5D9041E7A4C54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17CFC4861A659D57874D55807C120E9C /* Pods-GoodGasoline */,
+				4886DBB0FABDC3B7F41143FB21ECE9E6 /* Pods-GoodGasoline-GoodGasolineUITests */,
+				E91688A302F3F7E3AC7811C9B44FB2C3 /* Pods-GoodGasolineTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84021F206AFA941902E714D2D0F8C2A1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5F572734DD1CD37C8088D627166C3FB /* Pods-GoodGasoline */,
+				CA9098911CC71031A917D0B39E54B725 /* Pods-GoodGasoline-GoodGasolineUITests */,
+				186EA182A9758033E20807D84BAC46A7 /* Pods-GoodGasolineTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9601491F11C5653D98D1EB5DF2155DFE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AABE3D21F0BE384435A5D7C08A8FD5BB /* GoogleMaps.debug.xcconfig */,
+				C3D0978B919EA2ECF2A2F8466075BB51 /* GoogleMaps.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		A5F572734DD1CD37C8088D627166C3FB /* Pods-GoodGasoline */ = {
+			isa = PBXGroup;
+			children = (
+				033787DDCB402B28282FF0000E68D01D /* Pods-GoodGasoline.modulemap */,
+				A9B8E5006446175875D9537DA3F3CEE3 /* Pods-GoodGasoline-acknowledgements.markdown */,
+				26484D89152F13C1E09B86067571FF46 /* Pods-GoodGasoline-acknowledgements.plist */,
+				EF6797089C34685766CD56387A382EE7 /* Pods-GoodGasoline-dummy.m */,
+				7526B9DC68B17A24DF453DEA999934A7 /* Pods-GoodGasoline-Info.plist */,
+				3856E9FC5B37FA138B1FAA400DE45C62 /* Pods-GoodGasoline-resources.sh */,
+				75C38654914597FABC5EE603942118A2 /* Pods-GoodGasoline-umbrella.h */,
+				E451AB942F783F98BB7F56F9572FC02C /* Pods-GoodGasoline.debug.xcconfig */,
+				E6583D337877E4C12E00AF50891F8AE1 /* Pods-GoodGasoline.release.xcconfig */,
+			);
+			name = "Pods-GoodGasoline";
+			path = "Target Support Files/Pods-GoodGasoline";
+			sourceTree = "<group>";
+		};
+		CA9098911CC71031A917D0B39E54B725 /* Pods-GoodGasoline-GoodGasolineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F75BBE65750DB623A633892BF0A1004A /* Pods-GoodGasoline-GoodGasolineUITests.modulemap */,
+				0A3C1DB68A4CD81A2F4006302715C475 /* Pods-GoodGasoline-GoodGasolineUITests-acknowledgements.markdown */,
+				E015570C3245A8951D05388C30AF1965 /* Pods-GoodGasoline-GoodGasolineUITests-acknowledgements.plist */,
+				290292832AAE7A3E0EF7C6DDF158615E /* Pods-GoodGasoline-GoodGasolineUITests-dummy.m */,
+				E4D60A8E9F4AED18CEE1456C177E0FAF /* Pods-GoodGasoline-GoodGasolineUITests-Info.plist */,
+				85CBFA80FA917FD6DF8768C6F271A6A8 /* Pods-GoodGasoline-GoodGasolineUITests-resources.sh */,
+				D88423BCAB91582C968FB401BBC992E3 /* Pods-GoodGasoline-GoodGasolineUITests-umbrella.h */,
+				1754923469D7B1538C9119357A555352 /* Pods-GoodGasoline-GoodGasolineUITests.debug.xcconfig */,
+				2CB6EBF540DAE7176A2B4A1B3AFD0602 /* Pods-GoodGasoline-GoodGasolineUITests.release.xcconfig */,
+			);
+			name = "Pods-GoodGasoline-GoodGasolineUITests";
+			path = "Target Support Files/Pods-GoodGasoline-GoodGasolineUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DF3634087891871FA7B65CC4A8E6DB71 /* Pods */,
+				668598C490F7BE5427F5D9041E7A4C54 /* Products */,
+				84021F206AFA941902E714D2D0F8C2A1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF3634087891871FA7B65CC4A8E6DB71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23258B9441300E23C80256BEEFD1F964 /* GoogleMaps */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E48211C21EA696EBC32B31525F5FFA67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2309F84CDF17FF87E66D6CDB6B517AB /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F9621E38CA93CD5E47C3F28B4F0AF3DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01AF48CF5646ADAB5D7324A8169AFF03 /* GoogleMaps.framework */,
+				E2F4E7C722407F81715B67A5F9EC4FAD /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29C5F521B20C219DAC7F907E84343960 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D789553C0678689442F8BE183444E3BD /* Pods-GoodGasolineTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48FCDE63286691A0740D99C108689E84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5064C1249153A0AB2BD7F7FB1E24CF /* Pods-GoodGasoline-GoodGasolineUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DD6FDDF775F4CCE9AF3A7AED70438B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924F847B5CB218396641276981FEC9BB /* Pods-GoodGasoline-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6AF96BC049B3B0A608F4F0EB32C01054 /* Pods-GoodGasoline-GoodGasolineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14E1478C2FB1D733309A93D52DFF212C /* Build configuration list for PBXNativeTarget "Pods-GoodGasoline-GoodGasolineUITests" */;
+			buildPhases = (
+				48FCDE63286691A0740D99C108689E84 /* Headers */,
+				8551871A9FE92DF176EBC53B76865B03 /* Sources */,
+				BDEC0BE4D69D75BA5237B79BC20A161B /* Frameworks */,
+				5F1A14F3CBCDA63A88648B91EB9DFEC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B559ADB49B3F600A7D4B54BEE994C296 /* PBXTargetDependency */,
+			);
+			name = "Pods-GoodGasoline-GoodGasolineUITests";
+			productName = Pods_GoodGasoline_GoodGasolineUITests;
+			productReference = 4886DBB0FABDC3B7F41143FB21ECE9E6 /* Pods-GoodGasoline-GoodGasolineUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		84A4C0FEB64AD80AD5E4273C719EA02B /* Pods-GoodGasolineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C60746BDE8330A432EA2BD480EFD9BAC /* Build configuration list for PBXNativeTarget "Pods-GoodGasolineTests" */;
+			buildPhases = (
+				29C5F521B20C219DAC7F907E84343960 /* Headers */,
+				80C815D2DD7BFEBA8D6167C4B710CDB7 /* Sources */,
+				C5A4C3A621A0C1D4963C913E3635370B /* Frameworks */,
+				83DC238C3E6EBDB976C12FE271200E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E29F2AE0C10FB3C07FD1AF7450C1455B /* PBXTargetDependency */,
+			);
+			name = "Pods-GoodGasolineTests";
+			productName = Pods_GoodGasolineTests;
+			productReference = E91688A302F3F7E3AC7811C9B44FB2C3 /* Pods-GoodGasolineTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		F11C708CC3A740C54734C7CE93F27DEE /* Pods-GoodGasoline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F00A2692A59F85ADFA252C0712AE6E3 /* Build configuration list for PBXNativeTarget "Pods-GoodGasoline" */;
+			buildPhases = (
+				6DD6FDDF775F4CCE9AF3A7AED70438B2 /* Headers */,
+				B7291FBCF55857AEB2752536CD845FCA /* Sources */,
+				759C4C9F06B5C68BFA9071B0B27EB81A /* Frameworks */,
+				235C855726EF9EB06F1E92B41F4018BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				223BB85ED7FB6661C6762A475C4FD0B7 /* PBXTargetDependency */,
+			);
+			name = "Pods-GoodGasoline";
+			productName = Pods_GoodGasoline;
+			productReference = 17CFC4861A659D57874D55807C120E9C /* Pods-GoodGasoline */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 668598C490F7BE5427F5D9041E7A4C54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
+				F11C708CC3A740C54734C7CE93F27DEE /* Pods-GoodGasoline */,
+				6AF96BC049B3B0A608F4F0EB32C01054 /* Pods-GoodGasoline-GoodGasolineUITests */,
+				84A4C0FEB64AD80AD5E4273C719EA02B /* Pods-GoodGasolineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		235C855726EF9EB06F1E92B41F4018BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1A14F3CBCDA63A88648B91EB9DFEC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83DC238C3E6EBDB976C12FE271200E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80C815D2DD7BFEBA8D6167C4B710CDB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961C3303E749F9A9F35D8941BA2A4391 /* Pods-GoodGasolineTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8551871A9FE92DF176EBC53B76865B03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C3764CB7BBCAA3BA617444A76B0BBE /* Pods-GoodGasoline-GoodGasolineUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7291FBCF55857AEB2752536CD845FCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBB4C33951A78AF422620CAB8F5573E /* Pods-GoodGasoline-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		223BB85ED7FB6661C6762A475C4FD0B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = A909689629F882E28436B810BBE00CF3 /* PBXContainerItemProxy */;
+		};
+		B559ADB49B3F600A7D4B54BEE994C296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 4EC0922A1887F59580CF1EEBFFA794B7 /* PBXContainerItemProxy */;
+		};
+		E29F2AE0C10FB3C07FD1AF7450C1455B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GoodGasoline";
+			target = F11C708CC3A740C54734C7CE93F27DEE /* Pods-GoodGasoline */;
+			targetProxy = 34DA8A47C0DDA6D2E8B0716CA91014B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14CF91D0CDD390688D67438646598A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CB6EBF540DAE7176A2B4A1B3AFD0602 /* Pods-GoodGasoline-GoodGasolineUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoodGasoline-GoodGasolineUITests/Pods-GoodGasoline-GoodGasolineUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoodGasoline-GoodGasolineUITests/Pods-GoodGasoline-GoodGasolineUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1CFE5D976B8DF1A92C463CC9DCE9FDEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D0B1E8D672E03765CB7B951C0EEC486 /* Pods-GoodGasolineTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoodGasolineTests/Pods-GoodGasolineTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoodGasolineTests/Pods-GoodGasolineTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C4192245CC72617552E76BF67657A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E451AB942F783F98BB7F56F9572FC02C /* Pods-GoodGasoline.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoodGasoline/Pods-GoodGasoline-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoodGasoline/Pods-GoodGasoline.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4373790515FECF555DAC702E9F8C086D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6583D337877E4C12E00AF50891F8AE1 /* Pods-GoodGasoline.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoodGasoline/Pods-GoodGasoline-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoodGasoline/Pods-GoodGasoline.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52457E6DC96036797ADCE2964B677946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1754923469D7B1538C9119357A555352 /* Pods-GoodGasoline-GoodGasolineUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoodGasoline-GoodGasolineUITests/Pods-GoodGasoline-GoodGasolineUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoodGasoline-GoodGasolineUITests/Pods-GoodGasoline-GoodGasolineUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7C3FBC45C4966EFE20583918767EFBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		85497A42DE04D5B8B15D462CE776BA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8C229EC350B8BB0F6C9B815C782E71 /* Pods-GoodGasolineTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoodGasolineTests/Pods-GoodGasolineTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoodGasolineTests/Pods-GoodGasolineTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB9F138D6BE5B0B420804AA4F837BD74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AABE3D21F0BE384435A5D7C08A8FD5BB /* GoogleMaps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAD95AA7CDFAD96FA4035B88B54EA6F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3D0978B919EA2ECF2A2F8466075BB51 /* GoogleMaps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF0A36149038A192FFD678E1D4A40D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14E1478C2FB1D733309A93D52DFF212C /* Build configuration list for PBXNativeTarget "Pods-GoodGasoline-GoodGasolineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52457E6DC96036797ADCE2964B677946 /* Debug */,
+				14CF91D0CDD390688D67438646598A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB9F138D6BE5B0B420804AA4F837BD74 /* Debug */,
+				FAD95AA7CDFAD96FA4035B88B54EA6F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3FBC45C4966EFE20583918767EFBE2 /* Debug */,
+				FF0A36149038A192FFD678E1D4A40D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F00A2692A59F85ADFA252C0712AE6E3 /* Build configuration list for PBXNativeTarget "Pods-GoodGasoline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4192245CC72617552E76BF67657A09 /* Debug */,
+				4373790515FECF555DAC702E9F8C086D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C60746BDE8330A432EA2BD480EFD9BAC /* Build configuration list for PBXNativeTarget "Pods-GoodGasolineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CFE5D976B8DF1A92C463CC9DCE9FDEE /* Debug */,
+				85497A42DE04D5B8B15D462CE776BA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

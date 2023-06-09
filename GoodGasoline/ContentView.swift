@@ -39,7 +39,7 @@ struct MapView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("This is the Google Maps")
+                Text("This is the Map")
                     .font(.largeTitle)
                     .padding()
             }
