@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		47C8513133ED8113321BF512 /* Pods_GoodGasolineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5CBB03205EAB57AF6964D4 /* Pods_GoodGasolineTests.framework */; };
+		7A7332BF2A461C680004C520 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7332BE2A461C680004C520 /* LocationManager.swift */; };
 		7A961E162A1EAEB800401C45 /* GoodGasolineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E152A1EAEB800401C45 /* GoodGasolineApp.swift */; };
 		7A961E182A1EAEB800401C45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E172A1EAEB800401C45 /* ContentView.swift */; };
 		7A961E1A2A1EAEBA00401C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A961E192A1EAEBA00401C45 /* Assets.xcassets */; };
@@ -41,6 +42,8 @@
 		1A236F468528FC2D6FB68584 /* Pods-GoodGasolineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodGasolineTests.release.xcconfig"; path = "Target Support Files/Pods-GoodGasolineTests/Pods-GoodGasolineTests.release.xcconfig"; sourceTree = "<group>"; };
 		3506F32E60E382EDDC3AA0D8 /* Pods-GoodGasoline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodGasoline.release.xcconfig"; path = "Target Support Files/Pods-GoodGasoline/Pods-GoodGasoline.release.xcconfig"; sourceTree = "<group>"; };
 		629D47907B39D6C231AB553A /* Pods_GoodGasoline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodGasoline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A7332BE2A461C680004C520 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		7A7332C02A4628820004C520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7A961E122A1EAEB800401C45 /* GoodGasoline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodGasoline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A961E152A1EAEB800401C45 /* GoodGasolineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodGasolineApp.swift; sourceTree = "<group>"; };
 		7A961E172A1EAEB800401C45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,10 +114,12 @@
 		7A961E142A1EAEB800401C45 /* GoodGasoline */ = {
 			isa = PBXGroup;
 			children = (
+				7A7332C02A4628820004C520 /* Info.plist */,
 				7A961E152A1EAEB800401C45 /* GoodGasolineApp.swift */,
 				7A961E172A1EAEB800401C45 /* ContentView.swift */,
 				7A961E192A1EAEBA00401C45 /* Assets.xcassets */,
 				7A961E1B2A1EAEBA00401C45 /* Preview Content */,
+				7A7332BE2A461C680004C520 /* LocationManager.swift */,
 			);
 			path = GoodGasoline;
 			sourceTree = "<group>";
@@ -164,7 +169,6 @@
 				19E6C0EC9E8E2808D14B06C8 /* Pods-GoodGasolineTests.debug.xcconfig */,
 				1A236F468528FC2D6FB68584 /* Pods-GoodGasolineTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -408,6 +412,7 @@
 			files = (
 				7A961E182A1EAEB800401C45 /* ContentView.swift in Sources */,
 				7A961E162A1EAEB800401C45 /* GoodGasolineApp.swift in Sources */,
+				7A7332BF2A461C680004C520 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +574,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GoodGasoline/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoodGasoline/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please provide access of your location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -598,6 +605,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GoodGasoline/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoodGasoline/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please provide access of your location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
