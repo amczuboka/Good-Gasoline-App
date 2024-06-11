@@ -6,7 +6,7 @@ target 'GoodGasoline' do
   use_frameworks!
 
   # Pods for GoodGasoline
-    pod 'GoogleMaps', '6.1.0'
+    pod 'GoogleMaps', '~> 7.3'
     pod 'Google-Maps-iOS-Utils', '4.2.2'
 
   target 'GoodGasolineTests' do
