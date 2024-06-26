@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		19803DD351626F3CD5D50D0F /* Pods_GoodGasoline_GoodGasolineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6BE44ED174AB3E537625DF /* Pods_GoodGasoline_GoodGasolineUITests.framework */; };
 		7A7332BF2A461C680004C520 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7332BE2A461C680004C520 /* LocationManager.swift */; };
+		7A7CB21B2C18F48300773C2B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CB21A2C18F48300773C2B /* AppState.swift */; };
 		7A961E182A1EAEB800401C45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E172A1EAEB800401C45 /* ContentView.swift */; };
 		7A961E1A2A1EAEBA00401C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A961E192A1EAEBA00401C45 /* Assets.xcassets */; };
 		7A961E1D2A1EAEBA00401C45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A961E1C2A1EAEBA00401C45 /* Preview Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		42044ADB0B3B066B6C5575D4 /* Pods-GoodGasoline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodGasoline.release.xcconfig"; path = "Target Support Files/Pods-GoodGasoline/Pods-GoodGasoline.release.xcconfig"; sourceTree = "<group>"; };
 		7A7332BE2A461C680004C520 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		7A7332C02A4628820004C520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7A7CB21A2C18F48300773C2B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		7A961E122A1EAEB800401C45 /* GoodGasoline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodGasoline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A961E152A1EAEB800401C45 /* GoodGasolineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodGasolineApp.swift; sourceTree = "<group>"; };
 		7A961E172A1EAEB800401C45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				7A961E192A1EAEBA00401C45 /* Assets.xcassets */,
 				7A961E1B2A1EAEBA00401C45 /* Preview Content */,
 				7A7332BE2A461C680004C520 /* LocationManager.swift */,
+				7A7CB21A2C18F48300773C2B /* AppState.swift */,
 			);
 			path = GoodGasoline;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				7ACE7CD22C0FA27100D80046 /* GoodGasolineApp.swift in Sources */,
 				7A961E182A1EAEB800401C45 /* ContentView.swift in Sources */,
 				7A7332BF2A461C680004C520 /* LocationManager.swift in Sources */,
+				7A7CB21B2C18F48300773C2B /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
