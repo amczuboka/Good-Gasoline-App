@@ -23,20 +23,24 @@ PODS:
   - GoogleMaps/Base (7.4.0)
   - GoogleMaps/Maps (7.4.0):
     - GoogleMaps/Base
+  - GooglePlaces (7.4.0)
 
 DEPENDENCIES:
   - Google-Maps-iOS-Utils (= 4.2.2)
-  - GoogleMaps (~> 7.3)
+  - GoogleMaps (~> 7.0)
+  - GooglePlaces (~> 7.0)
 
 SPEC REPOS:
   trunk:
     - Google-Maps-iOS-Utils
     - GoogleMaps
+    - GooglePlaces
 
 SPEC CHECKSUMS:
   Google-Maps-iOS-Utils: f77eab4c4326d7e6a277f8e23a0232402731913a
   GoogleMaps: 032f676450ba0779bd8ce16840690915f84e57ac
+  GooglePlaces: 544e908d94860bf6f8fc1865b80d2c7eb6b5f937
 
-PODFILE CHECKSUM: b86ea1cd11ad36e955f989a64027ff85860bc296
+PODFILE CHECKSUM: 17ee8aebabf1974a18b0f24eb259bcbb8f54681f
 
 COCOAPODS: 1.15.2

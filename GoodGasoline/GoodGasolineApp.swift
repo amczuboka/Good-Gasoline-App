@@ -7,6 +7,7 @@
 
 import SwiftUI
 import GoogleMaps
+import GooglePlaces
 
 @main
 struct GoodGasolineApp: App {
@@ -14,6 +15,7 @@ struct GoodGasolineApp: App {
     
     init() {
         GMSServices.provideAPIKey("AIzaSyAyH-kBSCOA63VXSB-4z5QqQDun6wtegv8")
+        GMSPlacesClient.provideAPIKey("AIzaSyAyH-kBSCOA63VXSB-4z5QqQDun6wtegv8")
     }
     
     var body: some Scene {
