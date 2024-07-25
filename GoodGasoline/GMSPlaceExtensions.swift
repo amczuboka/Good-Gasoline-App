@@ -8,7 +8,7 @@
 import GooglePlaces
 
 extension GMSPlace {
-    var coordinateString: String {
-        return "\(coordinate.latitude),\(coordinate.longitude)"
+    var placeInfo: String {
+        return "\(name), \(type),\(coordinate.latitude),\(coordinate.longitude), \(placeID)"
     }
 }
