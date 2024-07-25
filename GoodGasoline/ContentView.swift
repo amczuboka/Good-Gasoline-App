@@ -37,7 +37,7 @@ struct ContentView: View {
                             .foregroundColor(.red)
                             .padding(.bottom, 20)
                     } else {
-                        List(locationManager.nearbyGasStations, id: \.coordinateString) { place in
+                        List(locationManager.nearbyGasStations, id: \.placeID) { place in
                                 Text(place.name ?? "Unnamed Place")
                             }
                             .frame(width: UIScreen.main.bounds.width * 0.8)
@@ -117,17 +117,12 @@ struct MapView: UIViewRepresentable {
         if let userCoordinate = locationManager.latestLocation?.coordinate {
             marker.position = userCoordinate
             marker.title = "Current Location"
-            
-            let label = UILabel(frame: CGRect(x: 25, y: 0, width: 150, height: 30))
-            label.text = "Current Location"
-            label.backgroundColor = .white
-            label.textAlignment = .center
-            label.layer.opacity = 0.8
-            label.layer.cornerRadius = 10
-            marker.iconView = label
+            let icon = GMSMarker.markerImage(with: UIColor.blue)
+            marker.icon = icon
         }
         
         marker.map = mapView
+        mapView.selectedMarker = marker
         
         if locationManager.nearbyGasStations.isEmpty {
             print("No gas stations found")
@@ -140,7 +135,6 @@ struct MapView: UIViewRepresentable {
             marker.title = place.name
             marker.map = mapView
         }
-        
     }
 }
 
