@@ -9,6 +9,6 @@ import GooglePlaces
 
 extension GMSPlace {
     var placeInfo: String {
-        return "\(name), \(type),\(coordinate.latitude),\(coordinate.longitude), \(placeID)"
+        return "\(coordinate.latitude),\(coordinate.longitude)"
     }
 }
