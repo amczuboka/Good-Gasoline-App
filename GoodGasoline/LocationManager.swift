@@ -63,7 +63,67 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         print("Location manager failed with error: \(error.localizedDescription)")
     }
     
-// This can be used instead of current implementation to add a locationBias
+    func fetchNearbyGasStations(radius: CLLocationDegrees = 0.001) {
+        guard let currentLocation = latestLocation else {
+            locationErrorMessage = "Cannot fetch nearby gas stations. Location data unavailable."
+            return
+        }
+
+        let placesClient = GMSPlacesClient.shared()
+        let placeFields: GMSPlaceField = [.name, .coordinate, .placeID, .types]
+        
+        let latitudeOffset: CLLocationDegrees = radius
+        let longitudeOffset: CLLocationDegrees = radius
+
+
+        let northWestBounds = CLLocationCoordinate2DMake(currentLocation.coordinate.latitude + latitudeOffset, currentLocation.coordinate.longitude + longitudeOffset)
+        let southEastBounds = CLLocationCoordinate2DMake(currentLocation.coordinate.latitude - latitudeOffset, currentLocation.coordinate.longitude - longitudeOffset)
+        
+        let locationRestriction = GMSPlaceRectangularLocationOption(northWestBounds, southEastBounds)
+        
+        let filter = GMSAutocompleteFilter()
+        filter.types = ["gas_station"]
+        filter.locationRestriction = locationRestriction
+
+        placesClient.findAutocompletePredictions(fromQuery: "gas", filter: filter, sessionToken: nil) { [weak self] (results, error) in
+            guard let self = self else { return }
+            
+            if let error = error {
+                print("Error fetching nearby gas stations: \(error.localizedDescription)")
+                self.locationErrorMessage = "Error fetching nearby gas stations."
+                return
+            }
+            
+            guard let results = results, !results.isEmpty else {
+                // Search until around a 25km radius
+                 if radius < 0.225 {
+                     print("No gas stations found nearby. Increasing search radius.")
+                     self.fetchNearbyGasStations(radius: radius * 2)
+                 } else {
+                     print("No gas stations found nearby after increasing search radius.")
+                     self.locationErrorMessage = "No gas stations found nearby."
+                 }
+                 return
+             }
+            
+            let placeIDs = results.map { $0.placeID }
+            
+            for placeID in placeIDs {
+                placesClient.fetchPlace(fromPlaceID: placeID, placeFields: placeFields, sessionToken: nil) { (place, error) in
+                    if let error = error {
+                        print("Error fetching place details: \(error.localizedDescription)")
+                        return
+                    }
+                    
+                    if let place = place {
+                        print("place: \(place)")
+                        self.nearbyGasStations.append(place)
+                    }
+                }
+            }
+        }
+    }
+
 //    func fetchNearbyGasStations() {
 //        guard let currentLocation = latestLocation else {
 //            locationErrorMessage = "Cannot fetch nearby gas stations. Location data unavailable."
@@ -71,98 +131,41 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
 //        }
 //
 //        let placesClient = GMSPlacesClient.shared()
-//        let placeFields: GMSPlaceField = [.name, .coordinate]
-//        
-//        let locationRestriction = GMSPlaceRectangularLocationOption(
-//            CLLocationCoordinate2D(latitude: currentLocation.coordinate.latitude - 0.01, longitude: currentLocation.coordinate.longitude - 0.01),
-//            CLLocationCoordinate2D(latitude: currentLocation.coordinate.latitude + 0.01, longitude: currentLocation.coordinate.longitude + 0.01)
-//        )
-//        
-//        let filter = GMSAutocompleteFilter()
-//        filter.types = ["gas_station"]
-//        filter.locationBias = locationRestriction
+//        let placeFields: GMSPlaceField = [.name, .coordinate, .types]
 //
-//        placesClient.findAutocompletePredictions(fromQuery: "gas stations", filter: filter, sessionToken: nil) { [weak self] (results, error) in
+//        placesClient.findPlaceLikelihoodsFromCurrentLocation(withPlaceFields: placeFields) { [weak self] (likelihoods, error) in
 //            guard let self = self else { return }
-//            
+//
 //            if let error = error {
 //                print("Error fetching nearby gas stations: \(error.localizedDescription)")
 //                self.locationErrorMessage = "Error fetching nearby gas stations."
 //                return
 //            }
-//            
-//            guard let results = results else {
-//                print("No gas stations found nearby.")
-//                self.locationErrorMessage = "No gas stations found nearby."
+//
+//            guard let likelihoods = likelihoods else {
+//                print("No locations found nearby.")
+//                self.locationErrorMessage = "No locations found nearby."
 //                return
 //            }
-//            
-//            let placeIDs = results.map { $0.placeID }
-//            
-//            // Fetch details for each place ID
-//            for placeID in placeIDs {
-//                placesClient.fetchPlace(fromPlaceID: placeID, placeFields: placeFields, sessionToken: nil) { (place, error) in
-//                    if let error = error {
-//                        print("Error fetching place details: \(error.localizedDescription)")
-//                        return
+//
+//            // Filter to include only gas stations
+//            self.nearbyGasStations = likelihoods
+//                .filter { likelihood in
+//                    // Filter the results to include only gas stations
+//                    if let types = likelihood.place.types {
+//                        print("types: ", likelihood.place)
+//                        return types.contains("restaurant")
 //                    }
-//                    
-//                    if let place = place {
-//                        self.nearbyGasStations.append(place)
-//                    }
+//                    return false
 //                }
+//                .map { $0.place }
+//
+//            // Print the nearby gas stations to the console
+//            for gasStation in self.nearbyGasStations {
+//                print("Gas Station: \(gasStation.name ?? "Unknown"), Coordinate: \(gasStation.coordinate.latitude), \(gasStation.coordinate.longitude)")
 //            }
 //        }
 //    }
-
-    func fetchNearbyGasStations() {
-        guard let currentLocation = latestLocation else {
-            locationErrorMessage = "Cannot fetch nearby gas stations. Location data unavailable."
-            return
-        }
-
-        let placesClient = GMSPlacesClient.shared()
-        let placeFields: GMSPlaceField = [.name, .coordinate, .types]
-
-        // Location bias can be added directly as part of the search criteria
-//        let locationBias = GMSPlaceRectangularLocationOption(
-//            CLLocationCoordinate2D(latitude: currentLocation.coordinate.latitude - 0.01, longitude: currentLocation.coordinate.longitude - 0.01),
-//            CLLocationCoordinate2D(latitude: currentLocation.coordinate.latitude + 0.01, longitude: currentLocation.coordinate.longitude + 0.01)
-//        )
-
-        placesClient.findPlaceLikelihoodsFromCurrentLocation(withPlaceFields: placeFields) { [weak self] (likelihoods, error) in
-            guard let self = self else { return }
-
-            if let error = error {
-                print("Error fetching nearby gas stations: \(error.localizedDescription)")
-                self.locationErrorMessage = "Error fetching nearby gas stations."
-                return
-            }
-
-            guard let likelihoods = likelihoods else {
-                print("No locations found nearby.")
-                self.locationErrorMessage = "No locations found nearby."
-                return
-            }
-
-            // Filter to include only gas stations
-            self.nearbyGasStations = likelihoods
-                .filter { likelihood in
-                    // Filter the results to include only gas stations
-                    if let types = likelihood.place.types {
-                        print("types: ", likelihood.place)
-                        return types.contains("restaurant")
-                    }
-                    return false
-                }
-                .map { $0.place }
-
-            // Print the nearby gas stations to the console
-            for gasStation in self.nearbyGasStations {
-                print("Gas Station: \(gasStation.name ?? "Unknown"), Coordinate: \(gasStation.coordinate.latitude), \(gasStation.coordinate.longitude)")
-            }
-        }
-    }
 
 
 }
