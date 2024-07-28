@@ -13,7 +13,8 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var latestLocation: CLLocation?
     @Published var locationErrorMessage: String?
     @Published var nearbyGasStations: [GMSPlace] = [];
-    
+    @Published var closestGasStation: GMSPlace?
+
     var simulatedAuthorizationStatus: CLAuthorizationStatus?
     
     override init() {
@@ -63,7 +64,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         print("Location manager failed with error: \(error.localizedDescription)")
     }
     
-    func fetchNearbyGasStations(radius: CLLocationDegrees = 0.001) {
+    func fetchNearbyGasStationsByQuery(radius: CLLocationDegrees = 0.001) {
         guard let currentLocation = latestLocation else {
             locationErrorMessage = "Cannot fetch nearby gas stations. Location data unavailable."
             return
@@ -98,7 +99,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
                 // Search until around a 25km radius
                  if radius < 0.225 {
                      print("No gas stations found nearby. Increasing search radius.")
-                     self.fetchNearbyGasStations(radius: radius * 2)
+                     self.fetchNearbyGasStationsByQuery(radius: radius * 2)
                  } else {
                      print("No gas stations found nearby after increasing search radius.")
                      self.locationErrorMessage = "No gas stations found nearby."
@@ -124,48 +125,70 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         }
     }
 
-//    func fetchNearbyGasStations() {
-//        guard let currentLocation = latestLocation else {
-//            locationErrorMessage = "Cannot fetch nearby gas stations. Location data unavailable."
-//            return
-//        }
-//
-//        let placesClient = GMSPlacesClient.shared()
-//        let placeFields: GMSPlaceField = [.name, .coordinate, .types]
-//
-//        placesClient.findPlaceLikelihoodsFromCurrentLocation(withPlaceFields: placeFields) { [weak self] (likelihoods, error) in
-//            guard let self = self else { return }
-//
-//            if let error = error {
-//                print("Error fetching nearby gas stations: \(error.localizedDescription)")
-//                self.locationErrorMessage = "Error fetching nearby gas stations."
-//                return
-//            }
-//
-//            guard let likelihoods = likelihoods else {
-//                print("No locations found nearby.")
-//                self.locationErrorMessage = "No locations found nearby."
-//                return
-//            }
-//
-//            // Filter to include only gas stations
-//            self.nearbyGasStations = likelihoods
-//                .filter { likelihood in
-//                    // Filter the results to include only gas stations
-//                    if let types = likelihood.place.types {
-//                        print("types: ", likelihood.place)
-//                        return types.contains("restaurant")
-//                    }
-//                    return false
-//                }
-//                .map { $0.place }
-//
-//            // Print the nearby gas stations to the console
-//            for gasStation in self.nearbyGasStations {
-//                print("Gas Station: \(gasStation.name ?? "Unknown"), Coordinate: \(gasStation.coordinate.latitude), \(gasStation.coordinate.longitude)")
-//            }
-//        }
-//    }
+    func fetchNearbyGasStations() {
+        guard let currentLocation = latestLocation else {
+            locationErrorMessage = "Cannot fetch nearby gas stations. Location data unavailable."
+            return
+        }
 
+        let placesClient = GMSPlacesClient.shared()
+        let placeFields: GMSPlaceField = [.name, .coordinate, .types]
 
+        placesClient.findPlaceLikelihoodsFromCurrentLocation(withPlaceFields: placeFields) { [weak self] (likelihoods, error) in
+            guard let self = self else { return }
+
+            if let error = error {
+                print("Error fetching nearby gas stations: \(error.localizedDescription)")
+                self.locationErrorMessage = "Error fetching nearby gas stations."
+                return
+            }
+
+            guard let likelihoods = likelihoods else {
+                print("No locations found nearby.")
+                self.locationErrorMessage = "No locations found nearby."
+                return
+            }
+
+            // Filter to include only gas stations
+            self.nearbyGasStations = likelihoods
+                .filter { likelihood in
+                    // Filter the results to include only gas stations
+                    if let types = likelihood.place.types {
+                        print("types: ", likelihood.place)
+                        return types.contains("restaurant")
+                    }
+                    return false
+                }
+                .map { $0.place }
+
+            // Print the nearby gas stations to the console
+            for gasStation in self.nearbyGasStations {
+                print("Gas Station: \(gasStation.name ?? "Unknown"), Coordinate: \(gasStation.coordinate.latitude), \(gasStation.coordinate.longitude)")
+            }
+            
+            // Find the closest gas station
+            self.closestGasStation = self.nearbyGasStations.min(by: {
+                $0.coordinate.distance(from: currentLocation.coordinate) < $1.coordinate.distance(to: currentLocation.coordinate)
+            })
+
+            // Print the nearby gas stations to the console
+            for gasStation in self.nearbyGasStations {
+                print("Gas Station: \(gasStation.name ?? "Unknown"), Coordinate: \(gasStation.coordinate.latitude), \(gasStation.coordinate.longitude)")
+            }
+
+            if let closestGasStation = self.closestGasStation {
+                print("Closest Gas Station: \(closestGasStation.name ?? "Unknown"), Coordinate: \(closestGasStation.coordinate.latitude), \(closestGasStation.coordinate.longitude)")
+            } else {
+                print("No gas stations found nearby.")
+            }
+        }
+    }
+}
+
+extension CLLocationCoordinate2D {
+    func distance(from coordinate: CLLocationCoordinate2D) -> CLLocationDistance {
+        let fromLocation = CLLocation(latitude: self.latitude, longitude: self.longitude)
+        let toLocation = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        return fromLocation.distance(from: toLocation)
+    }
 }
