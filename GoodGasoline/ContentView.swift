@@ -37,7 +37,7 @@ struct ContentView: View {
                             .foregroundColor(.red)
                             .padding(.bottom, 20)
                     } else {
-                        List(locationManager.nearbyGasStations, id: \.placeID) { place in
+                        List(locationManager.nearbyGasStations, id: \.placeInfo) { place in
                                 Text(place.name ?? "Unnamed Place")
                             }
                             .frame(width: UIScreen.main.bounds.width * 0.8)
@@ -72,6 +72,8 @@ struct ContentView: View {
 struct MapView: UIViewRepresentable {
     @EnvironmentObject private var locationManager: LocationManager
     @State private var zoomLevel: Float = 16.0
+    @State private var mapInitialized = false
+    @State private var selectedMarker: GMSMarker?
 
     // Handle map events
     func makeCoordinator() -> Coordinator {
@@ -93,8 +95,34 @@ struct MapView: UIViewRepresentable {
         func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
             print("zoom changed on idleAt")
             parent.zoomLevel = position.zoom
+            
+            if !parent.mapInitialized {
+                parent.mapInitialized = true
+                
+                guard let userCoordinate = parent.locationManager.latestLocation?.coordinate,
+                      let closestGasStation = parent.locationManager.closestGasStation else {
+                    return
+                }
+
+                let bounds = GMSCoordinateBounds(coordinate: userCoordinate, coordinate: closestGasStation.coordinate)
+                let update = GMSCameraUpdate.fit(bounds, withPadding: 50)
+                mapView.animate(with: update)
+            }
         }
-    }
+        
+        func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+            // Show custom view below the marker
+            parent.selectedMarker = marker
+            parent.updateGasStationView(for: marker)
+            return true
+        }
+
+        func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+            // Remove custom view when tapping elsewhere
+            parent.selectedMarker = nil
+            parent.removeGasStationView()
+        }
+  }
     
     func makeUIView(context: Context) -> GMSMapView {
         let camera = GMSCameraPosition.camera(withLatitude: locationManager.latestLocation?.coordinate.latitude ?? 0, longitude: locationManager.latestLocation?.coordinate.longitude ?? 0, zoom: zoomLevel)
@@ -135,6 +163,14 @@ struct MapView: UIViewRepresentable {
             marker.title = place.name
             marker.map = mapView
         }
+    }
+    
+    private func updateGasStationView(for marker: GMSMarker) {
+        print("Marker selected: ", marker)
+    }
+
+    private func removeGasStationView() {
+        print("Remove marker")
     }
 }
 
