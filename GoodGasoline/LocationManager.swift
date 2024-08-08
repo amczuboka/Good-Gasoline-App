@@ -132,8 +132,14 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         }
 
         let placesClient = GMSPlacesClient.shared()
-        let placeFields: GMSPlaceField = [.name, .coordinate, .types]
-
+        let placeFields: GMSPlaceField = [
+            .placeID,
+            .name,
+            .coordinate,
+            .formattedAddress,
+            .types,
+        ]
+        
         placesClient.findPlaceLikelihoodsFromCurrentLocation(withPlaceFields: placeFields) { [weak self] (likelihoods, error) in
             guard let self = self else { return }
 
@@ -149,38 +155,76 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
                 return
             }
 
-            // Filter to include only gas stations
-            self.nearbyGasStations = likelihoods
+            
+            let filteredLikelihoods = likelihoods
                 .filter { likelihood in
                     // Filter the results to include only gas stations
                     if let types = likelihood.place.types {
-                        print("types: ", likelihood.place)
                         return types.contains("restaurant")
                     }
                     return false
                 }
                 .map { $0.place }
+                
+            let placeIDs = filteredLikelihoods.compactMap { $0.placeID }
 
-            // Print the nearby gas stations to the console
-            for gasStation in self.nearbyGasStations {
-                print("Gas Station: \(gasStation.name ?? "Unknown"), Coordinate: \(gasStation.coordinate.latitude), \(gasStation.coordinate.longitude)")
-            }
-            
-            // Find the closest gas station
-            self.closestGasStation = self.nearbyGasStations.min(by: {
-                $0.coordinate.distance(from: currentLocation.coordinate) < $1.coordinate.distance(to: currentLocation.coordinate)
-            })
+            self.fetchPlaceDetails(for: placeIDs, placesClient: placesClient) { gasStations in
+                self.nearbyGasStations = gasStations
 
-            // Print the nearby gas stations to the console
-            for gasStation in self.nearbyGasStations {
-                print("Gas Station: \(gasStation.name ?? "Unknown"), Coordinate: \(gasStation.coordinate.latitude), \(gasStation.coordinate.longitude)")
-            }
+                // Find the closest gas station
+                self.closestGasStation = self.nearbyGasStations.min(by: {
+                    $0.coordinate.distance(from: currentLocation.coordinate) < $1.coordinate.distance(to: currentLocation.coordinate)
+                })
 
-            if let closestGasStation = self.closestGasStation {
-                print("Closest Gas Station: \(closestGasStation.name ?? "Unknown"), Coordinate: \(closestGasStation.coordinate.latitude), \(closestGasStation.coordinate.longitude)")
-            } else {
-                print("No gas stations found nearby.")
+                for gasStation in self.nearbyGasStations {
+                    print("Gas Station: \(gasStation.name ?? "Unknown"), Coordinate: \(gasStation.coordinate.latitude), \(gasStation.coordinate.longitude)")
+                }
+
+                if let closestGasStation = self.closestGasStation {
+                    print("Closest Gas Station: \(closestGasStation.name ?? "Unknown"), Coordinate: \(closestGasStation.coordinate.latitude), \(closestGasStation.coordinate.longitude)")
+                } else {
+                    print("No gas stations found nearby.")
+                }
             }
+        }
+    }
+    
+    private func fetchPlaceDetails(for placeIDs: [String], placesClient: GMSPlacesClient, completion: @escaping ([GMSPlace]) -> Void) {
+        let placeFields: GMSPlaceField = [
+            .name,
+            .coordinate,
+            .formattedAddress,
+            .phoneNumber,
+            .openingHours,
+            .website,
+            .rating,
+            .priceLevel,
+            .userRatingsTotal,
+            .businessStatus
+        ]
+
+        var gasStations: [GMSPlace] = []
+        let group = DispatchGroup()
+
+        for placeID in placeIDs {
+            group.enter()
+            placesClient.fetchPlace(fromPlaceID: placeID, placeFields: placeFields, sessionToken: nil) { place, error in
+                if let error = error {
+                    print("Error fetching place details: \(error.localizedDescription)")
+                    group.leave()
+                    return
+                }
+
+                if let place = place {
+                    gasStations.append(place)
+                }
+
+                group.leave()
+            }
+        }
+
+        group.notify(queue: .main) {
+            completion(gasStations)
         }
     }
 }

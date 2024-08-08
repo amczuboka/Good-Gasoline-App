@@ -18,6 +18,7 @@
 		7A961E312A1EAEBB00401C45 /* GoodGasolineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E302A1EAEBB00401C45 /* GoodGasolineUITests.swift */; };
 		7A961E332A1EAEBB00401C45 /* GoodGasolineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E322A1EAEBB00401C45 /* GoodGasolineUITestsLaunchTests.swift */; };
 		7ACE7CD22C0FA27100D80046 /* GoodGasolineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961E152A1EAEB800401C45 /* GoodGasolineApp.swift */; };
+		7ADF47E72C5AC9E6006A303B /* GasStationInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF47E62C5AC9E6006A303B /* GasStationInformationView.swift */; };
 		8E663657B4CB23FF22253031 /* Pods_GoodGasoline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A727557E080AEA63D972442D /* Pods_GoodGasoline.framework */; };
 		91A1BD21AA50EC0CACE735CB /* Pods_GoodGasolineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32163C7076C3FAC314E038DC /* Pods_GoodGasolineTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		7A961E2C2A1EAEBB00401C45 /* GoodGasolineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodGasolineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A961E302A1EAEBB00401C45 /* GoodGasolineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodGasolineUITests.swift; sourceTree = "<group>"; };
 		7A961E322A1EAEBB00401C45 /* GoodGasolineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodGasolineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7ADF47E62C5AC9E6006A303B /* GasStationInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationInformationView.swift; sourceTree = "<group>"; };
 		A727557E080AEA63D972442D /* Pods_GoodGasoline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodGasoline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6BE44ED174AB3E537625DF /* Pods_GoodGasoline_GoodGasolineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodGasoline_GoodGasolineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFF2A6FFF1ACBD64A06C344 /* Pods-GoodGasolineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodGasolineTests.release.xcconfig"; path = "Target Support Files/Pods-GoodGasolineTests/Pods-GoodGasolineTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				7A7332BE2A461C680004C520 /* LocationManager.swift */,
 				7A7CB21A2C18F48300773C2B /* AppState.swift */,
 				7A5AB0ED2C3E33CD00934B23 /* GMSPlaceExtensions.swift */,
+				7ADF47E62C5AC9E6006A303B /* GasStationInformationView.swift */,
 			);
 			path = GoodGasoline;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				7A961E182A1EAEB800401C45 /* ContentView.swift in Sources */,
 				7A7332BF2A461C680004C520 /* LocationManager.swift in Sources */,
 				7A7CB21B2C18F48300773C2B /* AppState.swift in Sources */,
+				7ADF47E72C5AC9E6006A303B /* GasStationInformationView.swift in Sources */,
 				7A5AB0EE2C3E33CD00934B23 /* GMSPlaceExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
