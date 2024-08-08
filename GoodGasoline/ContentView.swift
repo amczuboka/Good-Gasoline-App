@@ -8,6 +8,7 @@
 import SwiftUI
 import GoogleMaps
 import GoogleMapsUtils
+import GooglePlaces
 
 struct ContentView: View {
     @EnvironmentObject private var locationManager: LocationManager
@@ -82,7 +83,8 @@ struct MapView: UIViewRepresentable {
     
     class Coordinator: NSObject, GMSMapViewDelegate {
         var parent: MapView
-        
+        private var customView: CustomMarkerView?
+
         init(parent: MapView) {
             self.parent = parent
         }
@@ -111,16 +113,49 @@ struct MapView: UIViewRepresentable {
         }
         
         func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-            // Show custom view below the marker
-            parent.selectedMarker = marker
-            parent.updateGasStationView(for: marker)
-            return true
+             parent.selectedMarker = marker
+             if marker.title == "Current Location" {
+                 removeCustomView()
+                 return false
+             }
+             showCustomView(for: marker, in: mapView)
+             return false // Return false to keep default info window
+         }
+
+         func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+             parent.selectedMarker = nil
+             removeCustomView()
+         }
+        
+        private func showCustomView(for marker: GMSMarker, in mapView: GMSMapView) {
+            removeCustomView()
+
+            guard let place = marker.userData as? GMSPlace else {
+                   print("marker.userData is not of type GMSPlace")
+                   return
+            }
+               
+            let customView = CustomMarkerView(place: place)
+            customView.translatesAutoresizingMaskIntoConstraints = false
+            
+            if let superview = mapView.superview {
+                    superview.addSubview(customView)
+                    
+                    NSLayoutConstraint.activate([
+                        customView.leadingAnchor.constraint(equalTo: superview.leadingAnchor),
+                        customView.trailingAnchor.constraint(equalTo: superview.trailingAnchor),
+                        customView.bottomAnchor.constraint(equalTo: superview.bottomAnchor),
+                        customView.heightAnchor.constraint(equalToConstant: 150)
+                    ])
+                }
+
+            
+            self.customView = customView
         }
 
-        func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-            // Remove custom view when tapping elsewhere
-            parent.selectedMarker = nil
-            parent.removeGasStationView()
+        private func removeCustomView() {
+            customView?.removeFromSuperview()
+            customView = nil
         }
   }
     
@@ -161,16 +196,10 @@ struct MapView: UIViewRepresentable {
             let marker = GMSMarker()
             marker.position = place.coordinate
             marker.title = place.name
+            marker.userData = place
             marker.map = mapView
+            
         }
-    }
-    
-    private func updateGasStationView(for marker: GMSMarker) {
-        print("Marker selected: ", marker)
-    }
-
-    private func removeGasStationView() {
-        print("Remove marker")
     }
 }
 
