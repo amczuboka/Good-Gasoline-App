@@ -145,7 +145,6 @@ struct MapView: UIViewRepresentable {
                         customView.leadingAnchor.constraint(equalTo: superview.leadingAnchor),
                         customView.trailingAnchor.constraint(equalTo: superview.trailingAnchor),
                         customView.bottomAnchor.constraint(equalTo: superview.bottomAnchor),
-                        customView.heightAnchor.constraint(equalToConstant: 150)
                     ])
                 }
 
