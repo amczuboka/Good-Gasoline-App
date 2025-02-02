@@ -12,10 +12,11 @@ import GooglePlaces
 @main
 struct GoodGasolineApp: App {
     @StateObject private var locationManager = LocationManager()
-    // Some APIs are configured to be restricted by IP address
+    // All APIs are configured to be restricted by IP address
     init() {
-        GMSServices.provideAPIKey("AIzaSyAyH-kBSCOA63VXSB-4z5QqQDun6wtegv8")
-        GMSPlacesClient.provideAPIKey("AIzaSyAyH-kBSCOA63VXSB-4z5QqQDun6wtegv8")
+        let googleAPIKey = ProcessInfo.processInfo.environment["Google_API_Key"] ?? ""
+        GMSServices.provideAPIKey(googleAPIKey)
+        GMSPlacesClient.provideAPIKey(googleAPIKey)
     }
     
     var body: some Scene {
